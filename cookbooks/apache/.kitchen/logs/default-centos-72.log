@@ -1,0 +1,126 @@
+I, [2019-02-09T07:50:25.029301 #1395]  INFO -- default-centos-72: -----> Cleaning up any prior instances of <default-centos-72>
+I, [2019-02-09T07:50:25.029537 #1395]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2019-02-09T07:50:25.030659 #1395]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m0.00s).
+I, [2019-02-09T07:50:25.030986 #1395]  INFO -- default-centos-72: -----> Testing <default-centos-72>
+I, [2019-02-09T07:50:25.031139 #1395]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+I, [2019-02-09T07:50:28.488984 #1395]  INFO -- default-centos-72: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2019-02-09T07:50:29.475471 #1395]  INFO -- default-centos-72: ==> default: Importing base box 'bento/centos-7.2'...
+I, [2019-02-09T07:51:06.765434 #1395]  INFO -- default-centos-72: [KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2019-02-09T07:51:06.964479 #1395]  INFO -- default-centos-72: ==> default: Checking if box 'bento/centos-7.2' version '2.3.1' is up to date...
+I, [2019-02-09T07:51:08.029627 #1395]  INFO -- default-centos-72: ==> default: Setting the name of the VM: kitchen-apache-default-centos-72
+I, [2019-02-09T07:51:08.987043 #1395]  INFO -- default-centos-72: ==> default: Clearing any previously set network interfaces...
+I, [2019-02-09T07:51:09.062433 #1395]  INFO -- default-centos-72: ==> default: Preparing network interfaces based on configuration...
+I, [2019-02-09T07:51:09.063578 #1395]  INFO -- default-centos-72:     default: Adapter 1: nat
+I, [2019-02-09T07:51:09.162268 #1395]  INFO -- default-centos-72: ==> default: Forwarding ports...
+I, [2019-02-09T07:51:09.282048 #1395]  INFO -- default-centos-72:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2019-02-09T07:51:09.479288 #1395]  INFO -- default-centos-72: ==> default: Running 'pre-boot' VM customizations...
+I, [2019-02-09T07:51:09.547310 #1395]  INFO -- default-centos-72: ==> default: Booting VM...
+I, [2019-02-09T07:51:10.256252 #1395]  INFO -- default-centos-72: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2019-02-09T07:51:11.214044 #1395]  INFO -- default-centos-72:     default: SSH address: 127.0.0.1:2222
+I, [2019-02-09T07:51:11.214230 #1395]  INFO -- default-centos-72:     default: SSH username: vagrant
+I, [2019-02-09T07:51:11.214830 #1395]  INFO -- default-centos-72:     default: SSH auth method: private key
+I, [2019-02-09T07:51:34.041508 #1395]  INFO -- default-centos-72:     default: Warning: Connection reset. Retrying...
+I, [2019-02-09T07:51:44.289536 #1395]  INFO -- default-centos-72:     default: 
+I, [2019-02-09T07:51:44.289650 #1395]  INFO -- default-centos-72:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2019-02-09T07:51:44.289741 #1395]  INFO -- default-centos-72:     default: this with a newly generated keypair for better security.
+I, [2019-02-09T07:51:47.388663 #1395]  INFO -- default-centos-72:     default: 
+I, [2019-02-09T07:51:47.499667 #1395]  INFO -- default-centos-72:     default: Inserting generated public key within guest...
+I, [2019-02-09T07:51:48.301626 #1395]  INFO -- default-centos-72:     default: Removing insecure key from the guest if it's present...
+I, [2019-02-09T07:51:48.663970 #1395]  INFO -- default-centos-72:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2019-02-09T07:51:50.420081 #1395]  INFO -- default-centos-72: ==> default: Machine booted and ready!
+I, [2019-02-09T07:51:50.420726 #1395]  INFO -- default-centos-72: ==> default: Checking for guest additions in VM...
+I, [2019-02-09T07:51:50.495406 #1395]  INFO -- default-centos-72:     default: The guest additions on this VM do not match the installed version of
+I, [2019-02-09T07:51:50.495522 #1395]  INFO -- default-centos-72:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2019-02-09T07:51:50.495659 #1395]  INFO -- default-centos-72:     default: prevent things such as shared folders from working properly. If you see
+I, [2019-02-09T07:51:50.495749 #1395]  INFO -- default-centos-72:     default: shared folder errors, please make sure the guest additions within the
+I, [2019-02-09T07:51:50.495808 #1395]  INFO -- default-centos-72:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2019-02-09T07:51:50.495855 #1395]  INFO -- default-centos-72:     default: your host and reload your VM.
+I, [2019-02-09T07:51:50.495897 #1395]  INFO -- default-centos-72:     default: 
+I, [2019-02-09T07:51:50.496023 #1395]  INFO -- default-centos-72:     default: Guest Additions Version: 5.1.10
+I, [2019-02-09T07:51:50.496066 #1395]  INFO -- default-centos-72:     default: VirtualBox Version: 6.0
+I, [2019-02-09T07:51:50.497227 #1395]  INFO -- default-centos-72: ==> default: Setting hostname...
+I, [2019-02-09T07:51:52.550690 #1395]  INFO -- default-centos-72: ==> default: Mounting shared folders...
+I, [2019-02-09T07:51:52.551064 #1395]  INFO -- default-centos-72:     default: /tmp/omnibus/cache => /Users/Gopal/.kitchen/cache
+I, [2019-02-09T07:51:54.119922 #1395]  INFO -- default-centos-72: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2019-02-09T07:52:02.713595 #1395]  INFO -- default-centos-72: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2019-02-09T07:52:02.717800 #1395]  INFO -- default-centos-72: [SSH] Established
+I, [2019-02-09T07:52:02.718253 #1395]  INFO -- default-centos-72: Vagrant instance <default-centos-72> created.
+I, [2019-02-09T07:52:02.720291 #1395]  INFO -- default-centos-72: Finished creating <default-centos-72> (1m37.69s).
+I, [2019-02-09T07:52:02.730711 #1395]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2019-02-09T07:52:02.732078 #1395]  INFO -- default-centos-72: Preparing files for transfer
+I, [2019-02-09T07:52:02.732302 #1395]  INFO -- default-centos-72: Preparing dna.json
+I, [2019-02-09T07:52:02.784965 #1395]  INFO -- default-centos-72: Preparing current project directory as a cookbook
+I, [2019-02-09T07:52:03.067268 #1395]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2019-02-09T07:52:03.086843 #1395]  INFO -- default-centos-72: Preparing solo.rb
+I, [2019-02-09T07:52:03.166260 #1395]  INFO -- default-centos-72: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2019-02-09T07:52:03.201339 #1395]  INFO -- default-centos-72: -----> Installing Chef Omnibus (install only if missing)
+I, [2019-02-09T07:52:03.213533 #1395]  INFO -- default-centos-72: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2019-02-09T07:52:03.229439 #1395]  INFO -- default-centos-72: Trying wget...
+I, [2019-02-09T07:52:03.427930 #1395]  INFO -- default-centos-72: Download complete.
+I, [2019-02-09T07:52:03.470227 #1395]  INFO -- default-centos-72: el 7 x86_64
+I, [2019-02-09T07:52:03.470329 #1395]  INFO -- default-centos-72: Getting information for chef stable  for el...
+I, [2019-02-09T07:52:03.470387 #1395]  INFO -- default-centos-72: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2019-02-09T07:52:03.470435 #1395]  INFO -- default-centos-72:   to file /tmp/install.sh.8462/metadata.txt
+I, [2019-02-09T07:52:03.472132 #1395]  INFO -- default-centos-72: trying wget...
+I, [2019-02-09T07:52:03.593518 #1395]  INFO -- default-centos-72: sha1	7fa8289867cd8e91d1e325099a71c3e04e8d7f99
+I, [2019-02-09T07:52:03.593616 #1395]  INFO -- default-centos-72: sha256	6149bbd478318f5bea029274860ffeb9686d04d6534b77cc1ff48043b6a3a2a7
+I, [2019-02-09T07:52:03.593668 #1395]  INFO -- default-centos-72: url	https://packages.chef.io/files/stable/chef/14.10.9/el/7/chef-14.10.9-1.el7.x86_64.rpm
+I, [2019-02-09T07:52:03.593712 #1395]  INFO -- default-centos-72: version	14.10.9
+I, [2019-02-09T07:52:03.598353 #1395]  INFO -- default-centos-72: downloaded metadata file looks valid...
+I, [2019-02-09T07:52:03.634301 #1395]  INFO -- default-centos-72: downloading https://packages.chef.io/files/stable/chef/14.10.9/el/7/chef-14.10.9-1.el7.x86_64.rpm
+I, [2019-02-09T07:52:03.634525 #1395]  INFO -- default-centos-72:   to file /tmp/install.sh.8462/chef-14.10.9-1.el7.x86_64.rpm
+I, [2019-02-09T07:52:03.640338 #1395]  INFO -- default-centos-72: trying wget...
+I, [2019-02-09T07:52:10.604382 #1395]  INFO -- default-centos-72: Comparing checksum with sha256sum...
+I, [2019-02-09T07:52:10.937761 #1395]  INFO -- default-centos-72: 
+I, [2019-02-09T07:52:10.937858 #1395]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-02-09T07:52:10.937911 #1395]  INFO -- default-centos-72: 
+I, [2019-02-09T07:52:10.937954 #1395]  INFO -- default-centos-72: You are installing an omnibus package without a version pin.  If you are installing
+I, [2019-02-09T07:52:10.938023 #1395]  INFO -- default-centos-72: on production servers via an automated process this is DANGEROUS and you will
+I, [2019-02-09T07:52:10.938081 #1395]  INFO -- default-centos-72: be upgraded without warning on new releases, even to new major releases.
+I, [2019-02-09T07:52:10.938138 #1395]  INFO -- default-centos-72: Letting the version float is only appropriate in desktop, test, development or
+I, [2019-02-09T07:52:10.938194 #1395]  INFO -- default-centos-72: CI/CD environments.
+I, [2019-02-09T07:52:10.938226 #1395]  INFO -- default-centos-72: 
+I, [2019-02-09T07:52:10.938258 #1395]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-02-09T07:52:10.938290 #1395]  INFO -- default-centos-72: 
+I, [2019-02-09T07:52:10.938321 #1395]  INFO -- default-centos-72: Installing chef 
+I, [2019-02-09T07:52:10.938352 #1395]  INFO -- default-centos-72: installing with rpm...
+I, [2019-02-09T07:52:11.390773 #1395]  INFO -- default-centos-72: warning: /tmp/install.sh.8462/chef-14.10.9-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2019-02-09T07:52:14.157375 #1395]  INFO -- default-centos-72: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2019-02-09T07:52:14.168120 #1395]  INFO -- default-centos-72: Updating / installing...
+I, [2019-02-09T07:53:07.952907 #1395]  INFO -- default-centos-72:    1:chef-14.10.9-1.el7                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2019-02-09T07:53:09.220195 #1395]  INFO -- default-centos-72: Thank you for installing Chef!
+I, [2019-02-09T07:53:09.360454 #1395]  INFO -- default-centos-72: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2019-02-09T07:53:09.381036 #1395]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2019-02-09T07:53:09.522442 #1395]  INFO -- default-centos-72: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2019-02-09T07:53:11.553683 #1395]  INFO -- default-centos-72: Starting Chef Client, version 14.10.9
+I, [2019-02-09T07:53:12.892862 #1395]  INFO -- default-centos-72: Creating a new client identity for default-centos-72 using the validator key.
+I, [2019-02-09T07:53:13.123500 #1395]  INFO -- default-centos-72: resolving cookbooks for run list: ["apache::default"]
+I, [2019-02-09T07:53:13.148978 #1395]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2019-02-09T07:53:13.194769 #1395]  INFO -- default-centos-72:   - apache (0.34.0)
+I, [2019-02-09T07:53:13.194883 #1395]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2019-02-09T07:53:13.194956 #1395]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2019-02-09T07:53:13.204503 #1395]  INFO -- default-centos-72: Converging 2 resources
+I, [2019-02-09T07:53:13.204606 #1395]  INFO -- default-centos-72: Recipe: apache::default
+I, [2019-02-09T07:53:48.653044 #1395]  INFO -- default-centos-72:   * yum_package[httpd] action install
+I, [2019-02-09T07:53:48.685936 #1395]  INFO -- default-centos-72:     - install version 0:2.4.6-88.el7.centos.x86_64 of package httpd
+I, [2019-02-09T07:53:48.874608 #1395]  INFO -- default-centos-72:   * service[httpd] action enable
+I, [2019-02-09T07:53:48.874697 #1395]  INFO -- default-centos-72:     - enable service service[httpd]
+I, [2019-02-09T07:53:49.024536 #1395]  INFO -- default-centos-72:   * service[httpd] action start
+I, [2019-02-09T07:53:49.024625 #1395]  INFO -- default-centos-72:     - start service service[httpd]
+I, [2019-02-09T07:53:49.067861 #1395]  INFO -- default-centos-72: 
+I, [2019-02-09T07:53:49.067952 #1395]  INFO -- default-centos-72: Running handlers:
+I, [2019-02-09T07:53:49.067989 #1395]  INFO -- default-centos-72: Running handlers complete
+I, [2019-02-09T07:53:49.068023 #1395]  INFO -- default-centos-72: Chef Client finished, 3/3 resources updated in 37 seconds
+I, [2019-02-09T07:53:49.295415 #1395]  INFO -- default-centos-72: Finished converging <default-centos-72> (1m46.44s).
+I, [2019-02-09T07:53:49.326479 #1395]  INFO -- default-centos-72: -----> Setting up <default-centos-72>...
+I, [2019-02-09T07:53:49.327835 #1395]  INFO -- default-centos-72: Finished setting up <default-centos-72> (0m0.00s).
+I, [2019-02-09T07:53:49.327944 #1395]  INFO -- default-centos-72: -----> Verifying <default-centos-72>...
+I, [2019-02-09T07:53:49.355855 #1395]  INFO -- default-centos-72: Preparing files for transfer
+I, [2019-02-09T07:53:49.393462 #1395]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2019-02-09T07:53:49.394725 #1395]  INFO -- default-centos-72: Finished verifying <default-centos-72> (0m0.07s).
+I, [2019-02-09T07:53:49.395694 #1395]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2019-02-09T07:54:04.035593 #1395]  INFO -- default-centos-72: ==> default: Forcing shutdown of VM...
+I, [2019-02-09T07:54:05.257401 #1395]  INFO -- default-centos-72: ==> default: Destroying VM and associated drives...
+I, [2019-02-09T07:54:06.042607 #1395]  INFO -- default-centos-72: Vagrant instance <default-centos-72> destroyed.
+I, [2019-02-09T07:54:06.044747 #1395]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m16.65s).
+I, [2019-02-09T07:54:06.045650 #1395]  INFO -- default-centos-72: Finished testing <default-centos-72> (3m41.02s).

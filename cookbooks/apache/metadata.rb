@@ -1,0 +1,10 @@
+name             'apache'
+maintainer       'Intel'
+maintainer_email 'rreddy491@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures apache'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.34.0'
+issues_url       'https://intelgithub.com/chef-cookbooks/apache/issues'
+source_url       'https://intelgithub.com/chef-cookbooks/apache'
+#depends          's3_file'    
